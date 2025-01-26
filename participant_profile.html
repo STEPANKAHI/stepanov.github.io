@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет участника</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Личный кабинет участника</h1>
+            <nav>
+                <a href="/">Главная</a>
+                <a href="/register">Регистрация</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Ваши данные</h2>
+            <p>Имя: Иван Иванов</p>
+            <p>Email: ivan@example.com</p>
+
+            <h3>Записаться на мероприятие</h3>
+            <form method="POST">
+                <select name="event">
+                    {% for event in events %}
+                        <option value="{{ event }}">{{ event }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="button">Записаться</button>
+            </form>
+
+            <h3>Ваши мероприятия</h3>
+            <ul>
+                {% for event in participant_events %}
+                    <li>{{ event }}</li>
+                {% endfor %}
+            </ul>
+        </main>
+    </div>
+</body>
+</html>

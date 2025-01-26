@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Физкультурные мероприятия</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Физкультурные мероприятия</h1>
+            <nav>
+                <a href="/">Главная</a>
+                <a href="/register">Регистрация</a>
+                <a href="/profile/participant">Личный кабинет участника</a>
+                <a href="/profile/organizer">Личный кабинет организатора</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Добро пожаловать!</h2>
+            <p>Мы организуем спортивные события. Присоединяйтесь!</p>
+
+            <section class="events">
+                <h3>Ближайшие мероприятия</h3>
+                <div class="event-grid">
+                    {% for event in events %}
+                        <div class="event">{{ event }}</div>
+                    {% endfor %}
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

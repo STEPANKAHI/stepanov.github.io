@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0077b6; /* Синий фон */
+    color: black; /* Чёрный текст */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Высота на весь экран */
+    text-align: center;
+}
+
+.container {
+    max-width: 800px; /* Ограничиваем ширину контейнера */
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для контейнера */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #0077b6; /* Синий цвет для ссылок */
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+    color: #0077b6; /* Синий цвет для заголовка */
+}
+
+h2 {
+    color: #0077b6; /* Синий цвет для подзаголовка */
+}
+
+p {
+    font-size: 1.2em;
+    color: black; /* Чёрный цвет для текста */
+}
+
+.events {
+    margin-top: 30px;
+}
+
+.events h3 {
+    color: #0077b6; /* Синий цвет для заголовка мероприятий */
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    gap: 10px; /* Расстояние между элементами */
+}
+
+.event {
+    background-color: #ffffff; /* Белый фон для каждого мероприятия */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    font-size: 1.1em;
+    color: black; /* Чёрный цвет для текста мероприятий */
+}
+
+form {
+    margin: 20px 0;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #023e8a; /* Тёмно-синий цвет для кнопки */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #03045e; /* Цвет кнопки при наведении */
+}
